@@ -1,0 +1,22 @@
+version: '2'
+services:
+  web_admin:
+    build: .
+    container_name: 'web_admin_node'
+    command: ./start-server.sh
+    volumes:
+      - .:/opt/plataforma
+#      - /usr/src/app  /node_modules
+    ports:
+      - "8080:8888"
+    links:
+      - mongo-db
+    tty: true
+
+  mongo-db:
+    image: mongo
+    ports:
+      - "27017:27017"
+    container_name: mongo-db
+    volumes:
+      - ./db/:/data/db
