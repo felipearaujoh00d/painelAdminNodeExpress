@@ -12,17 +12,17 @@ html
 			.logo: h1 Vali
 
 			.login-box
-				form.login-form(action="dashboard.html")
+				form.login-form(action="/login/auth/signin", method="post")
 					h3.login-head
 						i.fa.fa-lg.fa-fw.fa-user
 						| SIGN IN
 					.form-group
 						label.control-label USERNAME
-						input.form-control(type="text", placeholder="Email", autofocus)
+						input.form-control(type="text", placeholder="Email", autofocus, name="username")
 
 					.form-group
 						label.control-label PASSWORD
-						input.form-control(type="password", placeholder="Password")
+						input.form-control(type="password", placeholder="Password", name="password")
 
 					.form-group
 						.utility
