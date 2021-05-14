@@ -65,3 +65,4 @@
 - https://dzone.com/articles/build-and-authenticate-a-nodejs-app-with-json-web
 - https://medium.com/@gpanassol/como-posso-fazer-modelagem-de-dados-em-mongodb-ea61268ee10b
 - https://github.com/HussainArif12/UserAuthentication-In-JavaScript ( Autenticação!!! )
+- https://dev.to/muhammadawaisshaikh/passport-authentication-using-nodejs-express-and-mongodb-4b6a
