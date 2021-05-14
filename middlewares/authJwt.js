@@ -81,25 +81,22 @@ isModerator = (req, res, next) => {
         );
     });
 };
-
-isAuthenticated = (req, res, next) => {
-    // do any checks you want to in here
-
-    console.log( req.user )
-
-    // CHECK THE USER STORED IN SESSION FOR A CUSTOM VARIABLE
-    // you can do this however you want with whatever variables you set up
-    if (req.user.authenticated)
-        return next();
-
-    // IF A USER ISN'T LOGGED IN, THEN REDIRECT THEM SOMEWHERE
-    res.redirect('/');
-}
+//
+// isAuthenticated = (req, res, next) => {
+//     // do any checks you want to in here
+//
+//     // CHECK THE USER STORED IN SESSION FOR A CUSTOM VARIABLE
+//     // you can do this however you want with whatever variables you set up
+//     if (req.user.authenticated)
+//         return next();
+//
+//     // IF A USER ISN'T LOGGED IN, THEN REDIRECT THEM SOMEWHERE
+//     res.redirect('/');
+// }
 
 const authJwt = {
     verifyToken,
     isAdmin,
-    isModerator,
-    isAuthenticated
+    isModerator
 };
 module.exports = authJwt;

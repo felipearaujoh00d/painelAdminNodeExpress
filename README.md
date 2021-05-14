@@ -51,7 +51,7 @@
 
 ### Tutoriais
 
-- https://www.sitepoint.com/local-authentication-using-passport-node-js/
+    - https://www.sitepoint.com/local-authentication-using-passport-node-js/
 - https://stackabuse.com/authentication-and-authorization-with-jwts-in-express-js/
 - https://www.digitalocean.com/community/tutorials/nodejs-jwt-expressjs
 - https://stackoverflow.com/questions/33246028/save-token-in-local-storage-using-node
@@ -64,3 +64,4 @@
 - https://www.luiztools.com.br/post/error-handling-em-node-js-com-express/
 - https://dzone.com/articles/build-and-authenticate-a-nodejs-app-with-json-web
 - https://medium.com/@gpanassol/como-posso-fazer-modelagem-de-dados-em-mongodb-ea61268ee10b
+- https://github.com/HussainArif12/UserAuthentication-In-JavaScript ( Autenticação!!! )

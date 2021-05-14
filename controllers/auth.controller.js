@@ -63,6 +63,7 @@ exports.signup = (req, res) => {
 };
 
 exports.signin = (req, res) => {
+
     User.findOne({
         username: req.body.username
     })
@@ -74,8 +75,12 @@ exports.signin = (req, res) => {
             }
 
             if (!user) {
+                // return res.status(404).send({ message: "User Not found." });
                 return res.status(404).send({ message: "User Not found." });
             }
+
+            console.log( user.password )
+
 
             var passwordIsValid = bcrypt.compareSync(
                 req.body.password,

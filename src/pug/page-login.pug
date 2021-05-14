@@ -12,7 +12,9 @@ html
 			.logo: h1 Vali
 
 			.login-box
-				form.login-form(action="/login/auth/signin", method="post")
+				form.login-form(action="/users/login", method="post")
+					if (error.length)
+						div.alert.alert-success #{ error }
 					h3.login-head
 						i.fa.fa-lg.fa-fw.fa-user
 						| SIGN IN
